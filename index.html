@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,44 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Game Shop</title>
 </head>
+
 <body>
   <!-- Estructura original: todavía NO hay botón hamburguesa -->
   <header>
+    <!-- Logo -->
     <div class="logo">
       <img src="./img/logoJoystick 1.svg" alt="" width="40" height="40">
       <h1>Game<span>Shop</span></h1>
     </div>
-    <nav>
+    <!-- Menu de navegacion -->
+    <nav id="menu-principal">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#ofertas">Ofertas</a></li>
         <li><a href="index.html#moda">Moda</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-      <a href="index.html#carrito" aria-label="Ver carrito"><i class="fa-solid fa-cart-shopping cart" aria-hidden="true"></i></a>
     </nav>
+    <!-- Carrito -->
+    <a href="index.html#carrito" class="cart" aria-label="Ver carrito"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+    <button class="hamb" type="button" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
   </header>
   <main>
-    <section id="ofertas"><h2>Ofertas</h2><p>Sección de ejemplo.</p></section>
-    <section id="moda"><h2>Moda</h2><p>Sección de ejemplo.</p></section>
-    <section id="carrito"><h2>Carrito</h2><p>Sección de ejemplo, todavía sin lógica de compras.</p></section>
+    <section id="ofertas">
+      <h2>Ofertas</h2>
+      <p>Sección de ejemplo.</p>
+    </section>
+    <section id="moda">
+      <h2>Moda</h2>
+      <p>Sección de ejemplo.</p>
+    </section>
+    <section id="carrito">
+      <h2>Carrito</h2>
+      <p>Sección de ejemplo, todavía sin lógica de compras.</p>
+    </section>
   </main>
+
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
